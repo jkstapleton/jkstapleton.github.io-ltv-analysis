@@ -7517,8 +7517,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Customer-Churn-and-Revenue-Prediction-Model">Customer Churn and Revenue Prediction Model<a class="anchor-link" href="#Customer-Churn-and-Revenue-Prediction-Model">¶</a></h1><h1 id="1.-Description">1. Description<a class="anchor-link" href="#1.-Description">¶</a></h1><p>Customer churn represents a significant cost to businesses — not only through lost revenue but also through the increased marketing expense to acquire new customers.This model helps mitigate churn by predicting which customers are at risk of "churning", which will be defined in this model as not purchasing over the next quarter.</p>
-<p>Using this information insight, marketing can automate targetted discount on products which the customer has previously purchase to improve retention rates. Additionally, the model estimates each customer’s expected spend over the same period, enhancing the ability to be cost efficient with the usage customer retention efforts.</p>
+<h1 id="Customer-Churn-and-Revenue-Prediction-Model">Customer Churn and Revenue Prediction Model<a class="anchor-link" href="#Customer-Churn-and-Revenue-Prediction-Model">¶</a></h1><h1 id="1.-Description">1. Description<a class="anchor-link" href="#1.-Description">¶</a></h1><p>Customer churn represents a significant cost to businesses — not only through lost revenue but also through the increased marketing expense to acquire new customers.This model helps mitigate churn by predicting which customers are at risk of "churning". Churn will will be defined in this model as not purchasing over the next quarter.</p>
+<p>Using these predictions, marketing can automate targetted discount on previously purchased goods/ substitutional good to increase good will and therefore improve retention rates. Additionally, the model estimates each customer’s expected spend over the same period, enhancing the ability to target high-spend customers.</p>
 <p>The model was built using transactional data from a UK-based e-commerce store and follows a two-stage regression approach:</p>
 <ol>
 <li><p><strong>Churn Prediction (Logistic Regression)</strong><br/>
@@ -7552,7 +7552,7 @@ For customers predicted to remain active, forecasts their total spending over th
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Basic-data-information">Basic data information<a class="anchor-link" href="#Basic-data-information">¶</a></h3><p>The transactional data used for the model is from 01/12/2010 to 09/12/2011 and is from a UK-based and registered non-store online retailer<a href="#1">[1]</a>. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. This is an example of the data below.</p>
-<h3 id="Cleaning-data">Cleaning data<a class="anchor-link" href="#Cleaning-data">¶</a></h3><p>The inital number of transactions was 4,335,272 but after taking out any data errors such as negative numbers or null values there were 3,183,072  transactional datapoints. More then 25% which is a significant number.</p>
+<h3 id="Cleaning-data">Cleaning data<a class="anchor-link" href="#Cleaning-data">¶</a></h3><p>The inital number of transactions was 4,335,272 but after taking out any data errors such as negative numbers or null values there were 3,183,072  transactional datapoints. More than 25% which is a significant number.</p>
 </div>
 </div>
 </div>
@@ -7729,9 +7729,7 @@ The output of these models will be used to:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Monetary-Value-Features">Monetary Value Features<a class="anchor-link" href="#Monetary-Value-Features">¶</a></h3><ul>
-<li>The average sale of each transactions and the total sales during the period of historical sales for each customer. These did not need to be tested as features as they are direct indicators of what they are predicting.</li>
-</ul>
+<h3 id="Monetary-Value-Features">Monetary Value Features<a class="anchor-link" href="#Monetary-Value-Features">¶</a></h3><p>The average sale of each transactions and the total sales during the period of historical sales for each customer. These did not need to be tested as features as they are direct indicators of what they are predicting.</p>
 </div>
 </div>
 </div>
@@ -7742,7 +7740,7 @@ The output of these models will be used to:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Amount-of-Sales-in-the-last-thirty-days">Amount of Sales in the last thirty days<a class="anchor-link" href="#Amount-of-Sales-in-the-last-thirty-days">¶</a></h3><p>This feature brings together Recency and Monetary value with it measuring the amount of sales by customer in the last 30 days. After filtering for customers which spent less then $1000 in the last 30 days we see the majority of customers with sales between this period spent between 100 and 300. 48 customers spent more then 1000 and with the largest spend being $17,754.4</p>
+<h3 id="Amount-of-Sales-in-the-last-thirty-days">Amount of Sales in the last thirty days<a class="anchor-link" href="#Amount-of-Sales-in-the-last-thirty-days">¶</a></h3><p>This feature brings together Recency and Monetary value with it measuring the amount of sales by customer in the last 30 days. After filtering for customers which spent less than $1000 in the last 30 days we see the majority of customers with sales between this period spent between 100 and 300. 48 customers spent more than 1000 and with the largest spend being $17,754.4</p>
 </div>
 </div>
 </div>
